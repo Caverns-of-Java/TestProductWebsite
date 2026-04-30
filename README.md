@@ -5,15 +5,18 @@ Minimal GitHub Pages demo for QR code + Digital Link URI behavior.
 ## Goal
 
 - Root page: `/` (served by `index.html`)
-- Digital Link path: `/09357645011115`
-- Behavior: `/09357645011115` loads a dedicated page that immediately forwards to `/`
+- Home page content: `Ken's website`
+- Product page: `/anotherpage.html`
+- Digital Link path: `/01/09357645011115`
+- Behavior: `/01/09357645011115` loads a dedicated page that immediately forwards to `/anotherpage.html`
 
 This approach works on GitHub Pages without wildcard server redirects.
 
 ## Files
 
-- `index.html` - simple product page with dummy data
-- `09357645011115/index.html` - entry page for the Digital Link path
+- `index.html` - plain home page
+- `anotherpage.html` - product page with dummy data
+- `01/09357645011115/index.html` - entry page for the Digital Link path
 
 ## Publish on GitHub Pages
 
@@ -25,6 +28,7 @@ This approach works on GitHub Pages without wildcard server redirects.
 ## Test URLs
 
 - `https://domainName.github.io/`
-- `https://domainName.github.io/09357645011115`
+- `https://domainName.github.io/anotherpage.html`
+- `https://domainName.github.io/01/09357645011115`
 
-Both should end up showing the product page content.
+The GS1 Digital Link URL should end up showing the product page content.
