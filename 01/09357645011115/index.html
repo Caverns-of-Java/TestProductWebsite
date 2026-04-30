@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="0; url=/TestProductWebsite/anotherpage.html">
+  <meta http-equiv="refresh" content="3; url=/TestProductWebsite/anotherpage.html">
   <script>
-    // Keep this GS1 Digital Link path working on GitHub Pages by forwarding to target page.
-    window.location.replace("/TestProductWebsite/anotherpage.html");
+    setTimeout(function () {
+      window.location.replace("/TestProductWebsite/anotherpage.html");
+    }, 3000);
   </script>
 </head>
 <body>
-  <p>Redirecting to product page...</p>
+  <p>Redirecting to product page in 3 seconds...</p>
   <p>If you are not redirected, <a href="/TestProductWebsite/anotherpage.html">open the product page</a>.</p>
 </body>
 </html>
